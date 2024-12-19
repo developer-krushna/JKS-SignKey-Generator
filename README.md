@@ -6,9 +6,9 @@ Android jks key generator with optional certificate details
 ## Usage
 - Please add this Provider code in your Application class or any other class
 ```java
-static{
-		java.security.Security.addProvider(new android.sun.security.provider.JavaKeyStoreProvider());
-	}
+static {
+ java.security.Security.addProvider(new android.sun.security.provider.JavaKeyStoreProvider());
+}
 ```
 #### Sample
 - [Download Sample APK](https://github.com/developer-krushna/JKS-SignKey-Generator/blob/main/Signature%20Key%20Generator_2.1.apk)
