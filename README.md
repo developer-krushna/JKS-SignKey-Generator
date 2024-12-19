@@ -3,7 +3,13 @@ Android jks key generator with optional certificate details
 ## Available features 
 - [x] No need to fill all the certificate details like Organization name, country, State etc..You can only set your common name for generating keys
 - [x] Can export pk8 + pem keys
-
+## Usage
+- Please add this Provider code in your Application class or any other class
+```java
+static{
+		java.security.Security.addProvider(new android.sun.security.provider.JavaKeyStoreProvider());
+	}
+```
 #### Sample
 - [Download Sample APK](https://github.com/developer-krushna/JKS-SignKey-Generator/blob/main/Signature%20Key%20Generator_2.1.apk)
 <img src="https://github.com/developer-krushna/JKS-SignKey-Generator/blob/main/Screenshot_2024_12_19-01_37_38.png" width="240" alt="Screenshot"/>
